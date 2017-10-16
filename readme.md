@@ -1,8 +1,8 @@
 # 웹접근성 향상을 위한 웹표준 프로젝트 
 <br>
-## [1일차](https://github.com/mousigner/mousigner.github.io/tree/master/md/1%EC%9D%BC%EC%B0%A8)
+## [1day](https://github.com/mousigner/mousigner.github.io/tree/master/md/1day)
 <br>
-## 2일차
+## [2day](https://github.com/mousigner/mousigner.github.io/tree/master/md/2day)
 <br>
 ## 3일차
 <br>
