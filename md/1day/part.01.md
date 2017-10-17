@@ -4,12 +4,12 @@
 ```
 70.12.114.190
 ```
-<br>
+
 ### ※강사님 깃허브
 ```
 https://github.com/seulbinim
 ```
-<br>
+
 ### ※설치파일
 
 #### visual studio code
@@ -18,27 +18,27 @@ live server
 js-css-html formatter
 markdown preview enhanced
 ```
-<br>
+
 #### firefox 확장프로그램
 ```
 web developer
 headingsmap
 open wax
 ```
-<br>
+
 #### chrome 확장프로그램
 ```
 web developer
 headingsmap
 open wax
 ```
-<br>
+
 #### ※ git
 #### ※ github
-<br>
+
 
 ### ※ git 참고 사이트 : https://git-scm.com/book/ko/v2
-<br>
+
 ### ※ git commit 활용을 위해서는 환결성정 계정등록 해야함
 ```
 git config user.name 'mousigner'
@@ -47,7 +47,7 @@ git config user.email loveing0215@gmail.com
 git config --global user.name 'mousigner'
 git config --global user.email loveing0215@gmail.com
 ```
-<br>
+
 ### ※ git bash 는 CLI로 명령
 
   - ls는 리스트
@@ -62,12 +62,12 @@ git config --global user.email loveing0215@gmail.com
   - echo 간단한 내용이 들어있는 파일을 생성할 경우
   - cat 안에 내용 확인
   - cp 카피
-<br>
+<br/>
   - ex) mkdir test && cd test (테스트폴더 만들고 그안으로 들어가라)
   - ex) echo "웹접근성" > readme.md (readme 파일안에 웹접근성 내용 넣어서 생성)
   - ex) echo "2017.10.16" >> readme.md (readme 파일에 2017.10.16 내용 추가)
   - ex) cp milk.js js/coffee.js (밀크 파일을 js폴더안에 커피로 카피해 넣어라)
-<br>
+<br/>
   - git init
   - git status
   - git add
@@ -83,4 +83,3 @@ git config --global user.email loveing0215@gmail.com
   - git remote rm origin
   - git push
   - git clone
-  
