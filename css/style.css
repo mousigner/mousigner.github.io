@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/*로고영역의 배경이미지 설정*/
+
+.logo {
+    width: 155px;
+    height: 29px;
+    background: url('../images/common/logo.gif') no-repeat 0 0;
+}
