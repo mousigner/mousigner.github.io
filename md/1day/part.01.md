@@ -12,30 +12,27 @@ https://github.com/seulbinim
 
 ### ※설치파일
 
-#### visual studio code
+#### 1. visual studio code
 ```
 live server
 js-css-html formatter
 markdown preview enhanced
 ```
 
-#### firefox 확장프로그램
+#### 2. firefox 확장프로그램
 ```
 web developer
 headingsmap
 open wax
 ```
-
-#### chrome 확장프로그램
+#### 3. chrome 확장프로그램
 ```
 web developer
 headingsmap
 open wax
 ```
-
-#### ※ git
-#### ※ github
-
+#### 4. git
+#### 5. github
 
 ### ※ git 참고 사이트 : https://git-scm.com/book/ko/v2
 
@@ -62,12 +59,12 @@ git config --global user.email loveing0215@gmail.com
   - echo 간단한 내용이 들어있는 파일을 생성할 경우
   - cat 안에 내용 확인
   - cp 카피
-<br/>
+  -
   - ex) mkdir test && cd test (테스트폴더 만들고 그안으로 들어가라)
   - ex) echo "웹접근성" > readme.md (readme 파일안에 웹접근성 내용 넣어서 생성)
   - ex) echo "2017.10.16" >> readme.md (readme 파일에 2017.10.16 내용 추가)
   - ex) cp milk.js js/coffee.js (밀크 파일을 js폴더안에 커피로 카피해 넣어라)
-<br/>
+  -
   - git init
   - git status
   - git add
