@@ -16,7 +16,8 @@ https://github.com/seulbinim
 ```
 live server
 js-css-html formatter
-markdown preview enhanced
+markdown preview 
+html auto close tag
 ```
 
 #### 2. firefox 확장프로그램
@@ -40,11 +41,11 @@ aria validator
 
 ### ※ git commit 활용을 위해서는 환결성정 계정등록 해야함
 ```
-git config user.name 'mousigner'
-git config user.email loveing0215@gmail.com
+git config user.name '아이디'
+git config user.email '메일'
 
-git config --global user.name 'mousigner'
-git config --global user.email loveing0215@gmail.com
+git config --global user.name '아이디'
+git config --global user.email '메일'
 ```
 
 ### ※ git bash 는 CLI로 명령
