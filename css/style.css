@@ -350,19 +350,22 @@ body {
 .board-list {
     display: flex;
 }
-.notice, .pds {
+.board-list [role="tab"] {
+    cursor: pointer;
+}
+.unvisual {
     display: none;
 }
-.tabpanel-act {
-    display: block !important;
+.board div ul {
+    display: block;
     margin-top: 15px;
 }
-.tabpanel-act li {
+.board div li {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }
-.tabpanel-act li a {
+.board div li a {
     display: block;
     /* width: calc(100% - 85px); */
     width: 290px;
@@ -371,13 +374,13 @@ body {
     /*크롬에서 적용되지 않음*/
     text-overflow: ellipsis;
 }
-.tabpanel-act li a:before {
+.board div li a:before {
     content: '.';
     position: relative;
     top: -5px;
     margin-right: 5px;
 }
-.tabpanel-act a[class$="more"] {
+.board a[class$="more"] {
     position: absolute;
     right: 0;
     top: 0;

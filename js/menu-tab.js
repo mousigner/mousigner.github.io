@@ -26,10 +26,38 @@ $(document).ready(function() {
             var src = $(this).find(img).attr('src').replace('_ov.gif', '.gif');
             $(this).find(img).attr('src', src);
         });
-});
 
-$(document).ready(function() {
-    $ { '.board-list a' }.click(function() {
-        $(this).find(subMenu).toggleClass('tabpanel-act');
+    // 탭 콘텐츠
+    var tab = $('.board-list [role="tab"]');
+    var tabImg = $('.board-list img');
+
+    $(tab).click(function() {
+        var selectedId = "#" + $(this).attr('aria-controls');
+        $(selectedId).removeClass('unvisual')
+            .siblings().addClass('unvisual');
+
+        $(this).attr('aria-selected', true).siblings().attr('aria-selected', false);
+        $(tabImg).each(function() {
+            if ($(this).hasClass('img-act')) {
+                this.src = this.src.replace('_on', '_off');
+            } else {
+                this.src = this.src.replace('_off', '_on');
+            }
+            $(this).toggleClass('img-act');
+            // $(this).addClass('img-act');
+            // $(this).siblings.removeClass('img-act');
+        });
     });
+    // $(tab).focusin(function() {
+    //     $(tabImg).each(function() {
+    //         if ($(this).hasClass('img-act')) {
+    //             this.src = this.src.replace('_on', '_off');
+    //         } else {
+    //             this.src = this.src.replace('_off', '_on');
+    //         }
+    //         $(this).toggleClass('img-act');
+    //     });
+    //     $(this).siblings().find(tabImg).removeClass('img-act');
+    //     $(this).find(tabImg).addClass('img-act');
+    // });
 });

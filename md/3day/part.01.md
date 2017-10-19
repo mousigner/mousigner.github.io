@@ -18,16 +18,17 @@ content-box 영역 사이즈는 144px
 border-box 영역 사이즈는 120px
 ```
 -
-- sass와 less의 활용. 국내에서는 less의 접근성 때문에 less를 많이 사용하지만 활용도가 높은것은 sass
-- 
-- css 레이아웃 스타일로 flex, grid 유용
 - css position 절대값을 쓸때 상위 영역 기준으로 절대값을 주고싶다면 상위 영역에 relative를 써야함
 - color에서 상위것을 상속하려면 inherit를 사용해 준다. 예로 li안에 a 가 칼라 상속을 못받는 현상을 inherit 쓰면 따로 a에 설정 안해줄 수 있음
 ```
 a {color:inherit;}
 ```
 -
-- flex와 grid는 레이아웃 css로 정렬이 용이함. flex는 메인정렬과 교차정렬 개념을 가져야하는데, 개인적으로 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
+- sass와 less의 활용. 국내에서는 less의 접근성 때문에 less를 많이 사용하지만 활용도가 높은것은 sass
+
+## css layout TIP
+- css 레이아웃 스타일로 flex, grid 유용
+- flex는 메인정렬과 교차정렬 개념을 가져야하는데, 개인적으로 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
 ```
 flex는 justify-content와 align-item으로 메인정렬, 교차정렬을 한다. 하위 속성으로는 아래것들이 있음.
 flex ie 10,11 지원하지만 7,8,9 에서는 지원안함
@@ -42,10 +43,9 @@ flex-end
 flex-start
 flex-flow  ...
 ```
--
+- grid는 반응형 페이지 레이아웃을 잡을때 용이 (http://cssgridgarden.com/ 에서 테스트 가능)
 ```
-grid는 반응형 페이지 레이아웃을 잡을때 용이하다.
-display:grid; 를 해주고 column과 row로 레이아웃을 설정해줌. (http://cssgridgarden.com/ 에서 테스트 가능)
+display:grid; 를 해주고 column과 row로 레이아웃을 설정해줌.
 grid-column {}
 grid-row {} ...
 ```
