@@ -27,14 +27,20 @@ border-box 영역 사이즈는 120px
 a {color:inherit;}
 ```
 -
-- flex와 grid는 레이아웃 css로 정렬이 용이함. flex는 메인정렬과 교차정렬 개념을 가져야하는데, 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
+- flex와 grid는 레이아웃 css로 정렬이 용이함. flex는 메인정렬과 교차정렬 개념을 가져야하는데, 개인적으로 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
 ```
 flex는 justify-content와 align-item으로 메인정렬, 교차정렬을 한다. 하위 속성으로는 아래것들이 있음.
+flex ie 10,11 지원하지만 7,8,9 에서는 지원안함
+
+justify-content
+align-items
+align-content
 
 space-around
 space-between
 flex-end
 flex-start
+flex-flow  ...
 ```
 -
 ```
