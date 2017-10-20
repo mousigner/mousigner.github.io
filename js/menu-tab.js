@@ -71,16 +71,4 @@ $(document).ready(function() {
     last.focusout(function() {
         list.removeClass('related-list-act');
     });
-    // $('.related-list').mouseover(function() {
-    //     $(this).addClass('related-list-act');
-    // });
-    // $('.related-list').mouseout(function() {
-    //     $(this).removeClass('related-list-act');
-    // });
-    // $('.related-list').focusin(function() {
-    //     $(this).addClass('related-list-act');
-    // });
-    // $('.related-list').focusout(function() {
-    //     $(this).removeClass('related-list-act');
-    // });
 });

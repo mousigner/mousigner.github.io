@@ -559,8 +559,13 @@ body {
 .favorite {
     width: 185px;
     grid-area: favorit;
+    background: url('../images/main/eventbox_bg.gif') no-repeat 0 100%;
 }
-.favorite-heading {}
+.favorite-heading {
+    padding: 5px 10px 10px 10px;
+    background: url('../images/main/eventbox_bg.gif') no-repeat;
+}
+.favorite-list {}
 
 /*슬로건*/
 
