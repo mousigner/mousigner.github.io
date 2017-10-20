@@ -32,9 +32,9 @@ $(document).ready(function() {
     var tabImg = $('.board-list img');
 
     $(tab).click(function() {
-        var selectedId = "#" + $(this).attr('aria-controls');
-        $(selectedId).removeClass('unvisual')
-            .siblings().addClass('unvisual');
+        // var selectedId = "#" + $(this).attr('aria-controls');
+        // $(selectedId).removeClass('unvisual')
+        //     .siblings().addClass('unvisual');
 
         $(this).attr('aria-selected', true).siblings().attr('aria-selected', false);
         $(tabImg).each(function() {
@@ -48,18 +48,6 @@ $(document).ready(function() {
             // $(this).siblings.removeClass('img-act');
         });
     });
-    // $(tab).focusin(function() {
-    //     $(tabImg).each(function() {
-    //         if ($(this).hasClass('img-act')) {
-    //             this.src = this.src.replace('_on', '_off');
-    //         } else {
-    //             this.src = this.src.replace('_off', '_on');
-    //         }
-    //         $(this).toggleClass('img-act');
-    //     });
-    //     $(this).siblings().find(tabImg).removeClass('img-act');
-    //     $(this).find(tabImg).addClass('img-act');
-    // });
 
     // 관련 사이트
     var list = $('.related-list');

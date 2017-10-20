@@ -335,6 +335,7 @@ body {
     width: 375px;
     grid-area: board;
     position: relative;
+    margin-top: 15px;
 }
 .board-list {
     display: flex;
@@ -347,10 +348,10 @@ body {
 }
 .board div ul {
     display: block;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .board div li {
-    margin: 10px 0;
+    margin: 5px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -560,17 +561,94 @@ body {
     width: 185px;
     grid-area: favorit;
     background: url('../images/main/eventbox_bg.gif') no-repeat 0 100%;
+    position: relative;
 }
 .favorite-heading {
-    padding: 5px 10px 10px 10px;
+    padding: 7px 10px 10px 10px;
     background: url('../images/main/eventbox_bg.gif') no-repeat;
 }
-.favorite-list {}
+.favorite-list {
+    overflow: hidden;
+    margin: 0 15px 0 10px;
+}
+.favorite-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    background: url('../images/main/icon_site.gif')no-repeat;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.favorite-list li:nth-child(1) {
+    background-position: 0 3px;
+}
+.favorite-list li:nth-child(2) {
+    background-position: 0 -32px;
+}
+.favorite-list li:nth-child(3) {
+    background-position: 0 -67px;
+}
+.favorite-list li:nth-child(4) {
+    background-position: 0 -102px;
+}
+.favorite-list li span {
+    width: 8px;
+    height: 8px;
+}
+.favorite-list .up {
+    background: url('../images/main/icon_up.gif') no-repeat;
+}
+.favorite-list .down {
+    background: url('../images/main/icon_down.gif') no-repeat;
+}
+.favorite-list .stop {
+    background: url('../images/main/icon_stop.gif') no-repeat;
+}
+.favorite-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 /*슬로건*/
 
 .slogan {
-    background: orange
+    position: relative;
+}
+.slogan-heading {
+    width: 114px;
+    height: 103px;
+    line-height: 103px;
+    position: absolute;
+    left: 35px;
+    bottom: -25px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.slogan-heading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/common/icon_coffee.png') no-repeat;
+}
+.slogan-content {
+    margin: 10px 70px 10px 180px;
+}
+.slogan-content q {
+    font-weight: 700;
+    color: #a09784;
+}
+.slogan-content q:before {
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+}
+.slogan-content q:after {
+    content: '';
 }
 
 /*푸터*/
@@ -581,4 +659,90 @@ body {
 }
 .footer-inner {
     margin: 0 auto;
+    position: relative;
+    padding: 10px 70px 10px 180px;
 }
+.footer-logo {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+.guide {
+    background: #7b8585;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.guide a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+}
+.guide li:before {
+    content: '|';
+}
+.guide li:first-child:before {
+    content: '';
+}
+.address {
+    font-style: normal;
+    margin: 10px 0;
+}
+.address span {
+    margin-right: 40px;
+}
+
+/* .footer {
+    background: url('../images/common/footerbg.gif') repeat-x;
+    width: 100%;
+}
+.footer-inner {
+    margin: 0 auto;
+    padding: 25px 35px;
+    display: grid;
+    grid-template-columns: 114px 1fr;
+    grid-template-rows: 40px 15px 15px;
+    grid-column-gap: 30px;
+    grid-row-gap: 5px;
+}
+.footer-logo {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: 114px;
+    padding: 25px 0;
+}
+.guide {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-around;
+    background: #7b8385;
+    line-height: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+.guide li {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.guide li:before {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.guide li:first-child:before {
+    content: '';
+}
+.address {
+    grid-column: 2;
+    font-size: 1.0rem;
+    margin-top: 10px;
+}
+.copyright {
+    grid-column: 2;
+    font-size: 1.0rem;
+    margin-top: 10px;
+} */
