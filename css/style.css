@@ -554,12 +554,13 @@ body {
     padding: 5px 10px;
 }
 
-/**/
+/*인기사이트*/
 
 .favorite {
     width: 185px;
     grid-area: favorit;
 }
+.favorite-heading {}
 
 /*슬로건*/
 
