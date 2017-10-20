@@ -28,6 +28,9 @@ a {color:inherit;}
 
 ## css layout TIP
 - css 레이아웃 스타일로 flex, grid 유용
+
+#### flex
+
 - flex는 메인정렬과 교차정렬 개념을 가져야하는데, 개인적으로 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
 ```
 flex는 justify-content와 align-item으로 메인정렬, 교차정렬을 한다. 하위 속성으로는 아래것들이 있음.
@@ -43,9 +46,29 @@ flex-end
 flex-start
 flex-flow  ...
 ```
-- grid는 반응형 페이지 레이아웃을 잡을때 용이 (http://cssgridgarden.com/ 에서 테스트 가능)
+
+#### grid
+
+- grid는 반응형 페이지 레이아웃을 잡을때 용이 
+- 참고사이트 https://developer.mozilla.org/ko/docs/Web/CSS/grid
+- 참고사이트 http://cssgridgarden.com/ 에서 테스트 가능
 ```
-display:grid; 를 해주고 column과 row로 레이아웃을 설정해줌.
-grid-column {}
-grid-row {} ...
+display:grid; 를 해주고 grid-template-area 등으로 영역 분할을 함.
+그리고 각 역역 클래스로 가서 그리드 위치를 설정해줌.
+grid-column : 1/4 ;
+grid-row : 1/span 3 ; ...
+
+말고도 각 영역에 네이밍을 해주고 grid-template-area 에서 출력해주는 방식도 있음.
+.news-article {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 20px 25px 1fr;
+    grid-gap: 15px;
+    grid-template-areas: "nail heading" "nail time" "nail brief";
+}
+.news-article .news-nail {
+    grid-area: thumbnail;
+}
+
+grid는 ie 11을 지원하고 이전 버전은 지원하지 않는 단점이 있음
 ```
