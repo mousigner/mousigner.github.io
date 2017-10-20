@@ -172,7 +172,7 @@ body {
 
 .main-content {
     background: url('../images/common/contents_box.png') no-repeat;
-    padding: 30px 0;
+    padding: 30px 25px;
     display: grid;
     grid-template-columns: 239px 375px 185px;
     grid-template-rows: 18% 18% 10% 18% 18% 18%;
@@ -180,11 +180,6 @@ body {
     grid-row-gap: 10px;
     grid-template-areas: "login       search  event" "login       board   event" "login       board   ebent" "validation  board   related" "term        news    favorit" "term        news    favorit";
 }
-
-/* .main-content>div {
-    background: pink !important;
-} */
-
 
 /*로그인*/
 
@@ -507,7 +502,7 @@ body {
     background: url('../images/main/eventbox_bg.gif') no-repeat 0 bottom;
 }
 .event-detail img {
-    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
 }
 .btn-group {
@@ -529,54 +524,36 @@ body {
     margin-left: 2px;
 }
 
-/* .event {
-    width: 185px;
-    grid-column-start: 6;
-    grid-row-start: 1;
-    background: url('../images/main/eventbox_bg.gif') no-repeat;
-    height: 240px;
-    padding: 10px;
-    position: relative;
-}
-.event-detail {
-    margin-top: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.event-detail img {
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-}
-.event-detail p {
-    margin-bottom: 15px;
-}
-.event .btn-group {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    width: 40px;
-    height: 16px;
-}
-.btn-group .btn-prev {
-    display: inline-block;
-    width: 17px;
-    height: 16px;
-    background: url('../images/main/btn_event_prev.gif') no-repeat;
-}
-.btn-group .btn-next {
-    display: inline-block;
-    width: 17px;
-    height: 16px;
-    background: url('../images/main/btn_event_next.gif') no-repeat;
-    margin-left: 2px;
-} */
-
-
 /*관련사이트*/
 
 .related {
     width: 185px;
     grid-area: related;
 }
+.related-heading {
+    padding: 5px 0 10px 10px;
+    background: url('../images/main/eventbox_bg.gif') no-repeat;
+}
+.related-list-wrap {
+    background: url('../images/main/eventbox_bg.gif') no-repeat 0 100%;
+    padding: 0 15px 15px;
+}
+.related-list {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: 0.5s;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.related-list:hover, .related-list:focus {
+    background: #ddd;
+}
+
+/**/
+
 .favorite {
     width: 185px;
     grid-area: favorit;
