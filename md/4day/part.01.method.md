@@ -7,7 +7,7 @@ EX)
 <img src="" aria-lable=""> --- X
 aria-lable 은 모든 객체에 사용할 수 있지만 alt의 접근성이 더 좋기 때문에 alt로 마크업이 되어있다면 구지 aria로 바꿔줄 이유는 없음
 ```
--
+
 ### JQUERY 활용도 높은 메서드
 - toggleClass
 - addClass

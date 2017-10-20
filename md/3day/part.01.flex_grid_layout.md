@@ -1,6 +1,7 @@
 # markup과 css 실무
 
 ## markup & css TIP
+
 - markup은 의미있는 구조와 접근성을 고려해서 구성
 - w3.org의 Nu Html Checker로 마크업 체크가 가능
 - 구글 웹개발자도구 audits의 Accessibility로 마크업 체크가 가능
@@ -30,7 +31,6 @@ a {color:inherit;}
 - css 레이아웃 스타일로 flex, grid 유용
 
 #### flex
-
 - flex는 메인정렬과 교차정렬 개념을 가져야하는데, 개인적으로 페이지를 구성하는 큰 레이아웃은 grid 세부 레이아웃은 flex 쓰면 좋을듯
 ```
 flex는 justify-content와 align-item으로 메인정렬, 교차정렬을 한다. 하위 속성으로는 아래것들이 있음.
@@ -48,7 +48,6 @@ flex-flow  ...
 ```
 
 #### grid
-
 - grid는 반응형 페이지 레이아웃을 잡을때 용이 
 - 참고사이트 https://developer.mozilla.org/ko/docs/Web/CSS/grid
 - 참고사이트 http://cssgridgarden.com/ 에서 테스트 가능
