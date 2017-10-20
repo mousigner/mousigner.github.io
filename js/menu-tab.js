@@ -60,4 +60,27 @@ $(document).ready(function() {
     //     $(this).siblings().find(tabImg).removeClass('img-act');
     //     $(this).find(tabImg).addClass('img-act');
     // });
+
+    // 관련 사이트
+    var list = $('.related-list');
+    var last = $('.related-list li:last-child');
+
+    list.focusin(function() {
+        $(this).addClass('related-list-act');
+    });
+    last.focusout(function() {
+        list.removeClass('related-list-act');
+    });
+    // $('.related-list').mouseover(function() {
+    //     $(this).addClass('related-list-act');
+    // });
+    // $('.related-list').mouseout(function() {
+    //     $(this).removeClass('related-list-act');
+    // });
+    // $('.related-list').focusin(function() {
+    //     $(this).addClass('related-list-act');
+    // });
+    // $('.related-list').focusout(function() {
+    //     $(this).removeClass('related-list-act');
+    // });
 });
